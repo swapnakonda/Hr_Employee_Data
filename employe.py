@@ -3,6 +3,7 @@
 class Employee():
 
     def __init__(self, empno, empname, salary):
+        print("employee constructor")
         self.empno = empno
         self.empname = empname
         self.salary = salary
@@ -16,6 +17,7 @@ class Employee():
         return self.salary * 12
 
     def emp_department_nor(self):
+        print("in departnor")
         return 10
 
 
