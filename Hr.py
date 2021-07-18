@@ -10,11 +10,10 @@ class Hr:
 
 
 hr = Hr()
-empno, empname, salary, first_manager,second_manager, anualsal, deptno = hr.get_hr_emprequested_info()
+empno, empname, salary, output_mgrs, anualsal, deptno = hr.get_hr_emprequested_info()
 print('empno - ',empno)
 print('empnoame - ',empname)
 print('salary - ', salary)
-print('first_manager - ',first_manager)
-print('second_manager -', second_manager)
+print('capitalized output_managers - ',output_mgrs)
 print('amnualsal - ',anualsal)
 print('deptno - ',deptno)

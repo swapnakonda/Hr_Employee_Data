@@ -11,7 +11,13 @@ class Employee():
 
     def get_emp_info(self):
         print("in emp info")
-        return self.empno, self.empname, self.salary,self.managers[0],self.managers[1], self.get_emp_annual_salary(), self.emp_department_nor()
+        output_managers = []
+        for mgr in self.managers:
+            temp = str.capitalize(mgr)
+            output_managers.append(temp)
+
+        print('output_managers - ', output_managers)
+        return self.empno, self.empname, self.salary, output_managers, self.get_emp_annual_salary(), self.emp_department_nor()
 
     def get_emp_annual_salary(self):
         print('in emp anual salary')
